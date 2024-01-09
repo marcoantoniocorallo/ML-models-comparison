@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 def euclidean_distance(x1, x2):
     return np.sqrt(np.sum((x1 - x2) ** 2))
@@ -17,7 +18,8 @@ def get_metric_evaluator(metric):
         'euclidean': euclidean_distance,
         'manhattan': manhattan_distance,
         'chebyshev': chebyshev_distance,
-        'minkowski': minkowski_distance
+        'minkowski': minkowski_distance,
+        "cosine":cosine_similarity
     }
     return metrics[metric]
     
