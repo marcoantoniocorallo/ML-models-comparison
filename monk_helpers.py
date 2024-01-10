@@ -9,5 +9,5 @@ def read_ds(path):
   
   # One-hot encoding categorical variables
   df = pd.get_dummies(df, columns=['x1','x2','x3','x4','x5','x6']).astype('int')
-
   return (df, y)
+
