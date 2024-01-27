@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import StratifiedKFold
 
 
 def read_ds(path):
@@ -16,8 +15,6 @@ def read_ds(path):
 
   return (X , y)
 
-### Global K-Fold strategy
-CV = StratifiedKFold(n_splits=5, random_state=42, shuffle=True)
 
 ### Initialization seed
 SEED = 42
