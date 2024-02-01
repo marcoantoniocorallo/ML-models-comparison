@@ -1,0 +1,3 @@
+Our top-performing model is a NN with three hidden layers, respectively of size 128, 256 and 64. The NN uses a mini-batch of size 32, Nesterov momentum of 0.9, L1 regularization and linear learning rate decay.
+The model selection process adopted in this project consists of two phases: It first filters the top models using a gridsearch and then evaluate them on a set of different initial weights later, computing mean error and standard deviation and plotting the learning curves. These informations allow us to have an idea of the stability of our model and to detect eventual overfitting.
+Special attention was paid on the separation between validation and test set aims, also known as the golden rule, in order to obtain models able to learn and generalize.
